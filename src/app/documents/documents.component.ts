@@ -4,7 +4,7 @@ import { Document } from './document';
 @Component ({
     moduleId: 'module.id',
     selector: 'documents',
-    templateUrl: `documents.component.html`
+    templateUrl: 'documents.component.html',
 })
 
 export class DocumentsComponent {
