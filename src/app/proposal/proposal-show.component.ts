@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Proposal } from './proposal';
 
 @Component ({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'proposal-show',
     templateUrl: 'proposal-show.component.html',
 })
