@@ -12,24 +12,24 @@ export class DocumentsComponent {
     documents:Document[] = [
         {
             title: "My first doc",
-            description: "abcdefg",
+            description: "Document is being constructing...",
             file_url:"https://github.com/kevinzhang2012",
             updated_at:"11/02/1994",
-            image_url:"https://github.com/kevinzhang2012",
+            image_url:"https://blog.zingchart.com/content/images/2016/06/angularjsgoogle.png",
         },
         {
             title: "My second doc",
-            description: "abcdefg",
+            description: "Document is being constructing...",
             file_url:"https://github.com/kevinzhang2012",
             updated_at:"11/02/1994",
-            image_url:"https://github.com/kevinzhang2012",
+            image_url:"https://blog.zingchart.com/content/images/2016/06/angularjsgoogle.png",
         },
         {
             title: "My third doc",
-            description: "abcdefg",
+            description: "Document is being constructing...",
             file_url:"https://github.com/kevinzhang2012",
             updated_at:"11/02/1994",
-            image_url:"https://github.com/kevinzhang2012",
+            image_url:"https://blog.zingchart.com/content/images/2016/06/angularjsgoogle.png",
         },
     ];
     

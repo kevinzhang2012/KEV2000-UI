@@ -1,12 +1,11 @@
-<br/>
-<h2>{{ pageTitle }}</h2>
 <div *ngFor="let doc of documents">
-    <h3>{{ doc.title }}</h3>
-    <em>{{ doc.description }}</em>
-    <div>
-        <a href="{{ doc.file_url }}">Download File</a>
-    </div>
-    <p>Updated at {{ doc.updated_at }}</p>
-    <p>Image: {{doc.image_url}}</p>
-    <hr/>
+<div class="card mb-3">
+  <img class="card-img" src="{{ doc.image_url }}" alt="{{ doc.title }}" width="100%">
+  <div class="card-block">
+    <h4 class="card-title">{{ doc.title }}</h4>
+    <p class="card-text">{{ doc.description }}</p>
+    <a href="#" class="btn btn-primary" href="{{ doc.file_url }}">Download</a>
+    <p class="card-text"><small class="text-muted">Updated at {{ doc.updated_at }}</small></p>
+  </div>
+</div>
 </div>
