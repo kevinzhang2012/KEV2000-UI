@@ -5,19 +5,19 @@
   <a class="navbar-brand" routerLink="/home">KEV2000</a>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/documents">Docs</a>
+        <a class="nav-link" routerLink="/documents" routerLinkActive="active">Docs</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown" routerLinkActive="active"> 
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
           Proposal
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" routerLink="/proposals/new">New Proposal</a>
-          <a class="dropdown-item" routerLink="/proposals">Show Proposal</a>
+          <a class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active">New Proposal</a>
+          <a class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Show Proposal</a>
         </div>
       </li>
     </ul>
