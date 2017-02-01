@@ -2,8 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>KEV2000</title>
+  <title>KEVinNZ</title>
   <base href="/">
+
+  <script> // For Github Pages routing redirection
+  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
