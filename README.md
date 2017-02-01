@@ -1,6 +1,6 @@
 #KEVinNZ
 
-Test deploy with AWS: https://d4l0bf68mdhhw.cloudfront.net/
+Test deploy with Github Pages: https://kevinzhang2012.github.io/kevinnz/documents
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
