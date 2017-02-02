@@ -2,30 +2,29 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="container">
     <a class="navbar-brand" routerLink="/home">KEVINNZ</a>
-
-  <div class="collapse navbar-collapse" id="navbar-content">
-    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/documents" routerLinkActive="active">Docs</a>
-      </li>
-      <li class="nav-item dropdown" routerLinkActive="active"> 
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-          Proposal
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active">New Proposal</a>
-          <a class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Show Proposal</a>
-        </div>
-      </li>
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/documents" routerLinkActive="active">Docs</a>
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active"> 
+         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            Proposal
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active">New Proposal</a>
+            <a class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Show Proposal</a>
+          </div>
+        </li>
     </ul>
     <a class="btn btn-outline-primary btn my-2 my-sm-0" target="_blank" href="https://github.com/kevinzhang2012/KEV2000-UI">  <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
   </div>
+  </div>
 </nav>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
