@@ -13,8 +13,42 @@ body{
 }
 
 #homepage-container {
-    /*background-image:url("/assets/wallpaper_3.jpg");*/
-    background-image:url("/kevinnz/assets/wallpaper_3.jpg");
+    background-image:url("/assets/wallpaper_3.jpg");
+    /*background-image:url("/kevinnz/assets/wallpaper_3.jpg");*/
     background-size:300%;
     height:100%;
+}
+
+.hp-block-left, .hp-block-right {
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    /*background-color: rgba(226, 226, 226,0.3);*/
+}
+
+.hp-block-left{
+    left:0%;
+    background-color: #42a1f4;
+}
+
+.hp-block-left h1 {
+    position: absolute;
+    color:white;
+    top: 80px;
+    display: inline-block;
+    right: 3px;
+}
+
+.hp-block-right {
+    left:50%;
+    background-color: white;
+}
+
+.hp-block-right h1 {
+    position: absolute;
+    color: #42a1f4;
+    top: 80px;
+    display: inline-block;
+    left: 3px;
 }
