@@ -48,6 +48,7 @@ body{
     border-right-style: none;
     border-bottom-left-radius: 30px;
     z-index: 1;
+    font-size:8vw;
 }
 
 .hp-block-right {
@@ -66,4 +67,5 @@ body{
     padding-left: 3px;
     border-left-style: none;
     border-top-right-radius: 30px;
+    font-size:8vw;
 }
