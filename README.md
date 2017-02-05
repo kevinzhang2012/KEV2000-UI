@@ -4,7 +4,8 @@ Test deploy with Github Pages: `https://kevinzhang2012.github.io/kevinnz/`
 * Note that Current Github Pages do not support SPAs' routing, therefore a trick is used to redirect 404 page to the desired routing. Details: http://developer.telerik.com/featured/quick-angular-2-hosting-angular-cli-github-pages/
 
 
-<br/>
+
+---
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
 ## Development server
