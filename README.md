@@ -1,9 +1,8 @@
 #KEVinNZ
+A personal website's front-end in development with Angular 2 + Bootstrap 4 and some other updating features.
 
-Test deploy with Github Pages: `https://kevinzhang2012.github.io/kevinnz/`
-* Note that Current Github Pages do not support SPAs' routing, therefore a trick is used to redirect 404 page to the desired routing. Details: http://developer.telerik.com/featured/quick-angular-2-hosting-angular-cli-github-pages/
-
-
+Test deploy with Github Pages: `https://kevinzhang2012.github.io/kevinnz/`<br/>
+Note that Current Github Pages do not support SPAs' routing, therefore a trick is used to redirect 404 page to the desired routing ([Details](http://developer.telerik.com/featured/quick-angular-2-hosting-angular-cli-github-pages/)).
 
 ---
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
