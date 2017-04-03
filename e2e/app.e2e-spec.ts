@@ -1,10 +1,10 @@
-import { Kev2000UiPage } from './app.po';
+import { UpgradeProjectPage } from './app.po';
 
-describe('kev2000-ui App', function() {
-  let page: Kev2000UiPage;
+describe('upgrade-project App', () => {
+  let page: UpgradeProjectPage;
 
   beforeEach(() => {
-    page = new Kev2000UiPage();
+    page = new UpgradeProjectPage();
   });
 
   it('should display message saying app works', () => {
