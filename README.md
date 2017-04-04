@@ -6,7 +6,7 @@ Note that Current Github Pages do not support SPAs' routing, therefore a trick i
 
 ## Deploying to Github Pages
 
-Current deploy method: https://www.npmjs.com/package/ng-deploy-gh-pages
+Current deploy method: https://www.npmjs.com/package/ng-deploy-gh-pages <br/>
 Run `npm run deploy` to deploy to Github Pages.
 
 # UpgradeProject
