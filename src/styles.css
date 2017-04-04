@@ -20,9 +20,9 @@ body{
     width: 100%;
     height: 100%;
     z-index: -999;
-    background-image:url("/assets/wallpaper_3.jpg");
+    background-image:url("/assets/landscape.jpg");
     /*background-image:url("/kevinnz/assets/wallpaper_3.jpg");*/
-    background-size:260%;
+    background-size:cover;
     position: absolute;
     background-repeat: no-repeat;
 }
@@ -39,6 +39,10 @@ body{
 
 #hp-intro hr {
     border-color: #d6d6d6;
+}
+#hp-downarrow {
+    color: white;
+    bottom:30px;
 }
 
 .hp-h1 {
@@ -116,14 +120,26 @@ body{
 
 
 
+#section-2-container{
+    height:100%;
+}
 
 
 
+.carousel{
+    height: 100%;
+}
+.carousel-inner{
 
-
+    height:100%;
+}
 .carousel-item {
-    height:650px;
+    top:20%;
+    transform: translateY(-50%);
     transform: translateZ(-1px)scale(1.5);
+}
+.carousel-indicators {
+    bottom:40px;
 }
 
 
