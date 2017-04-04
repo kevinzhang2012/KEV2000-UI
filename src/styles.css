@@ -121,7 +121,10 @@ body{
 
 
 
-
+.carousel-item {
+    height:650px;
+    transform: translateZ(-1px)scale(1.5);
+}
 
 
 
