@@ -26,10 +26,50 @@
         </li>
     </ul>
     <a class="btn btn-outline-primary btn my-2 my-sm-0" target="_blank" href="https://github.com/kevinzhang2012/KEV2000-UI">  <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">
+  Sign Up
+</button>
+
   </div>
    </div>
 </nav>
+<!-- Modal -->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input #signupEmail type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
 
+            <label for="exampleInputPassword1">Password</label>
+            <input #signupPassword type="password" class="form-control"  placeholder="Password">
+
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input #signupConfirmPassword type="password" class="form-control"  placeholder="Password">
+          </div>
+        </form>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="signup-submit" (click)="signUp(signupEmail.value,signupPassword.value,signupConfirmPassword.value)">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HomepageComponent implements OnInit{
-    greeting : string = "WELCOME!";
-    greetings : string [] = ["WELCOME", "Kia ora", "欢迎","Bienvenue", "ようこそ","Добро пожаловать","환영"]; 
+    greeting : string = "WELCOME";
+    greetings : string [] = ["Kia ora", "欢迎","Bienvenue", "ようこそ","Добро пожаловать","환영","WELCOME"]; 
 
     ngOnInit() : void {
         let i = 0;
@@ -17,6 +17,6 @@ export class HomepageComponent implements OnInit{
                 i=0;
             } else {i++;}
         }
-        setInterval(() => {this.greeting=this.greetings[i]; console.log(this.greeting);TimeoutGreeting()}, 3000);
+        setInterval(() => {this.greeting=this.greetings[i];TimeoutGreeting()}, 3000);
     }
 }
