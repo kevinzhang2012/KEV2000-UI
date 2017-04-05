@@ -11,6 +11,7 @@ import { DocumentsComponent } from './documents/documents.component';
 import { ProposalNewComponent } from './proposal/proposal-new.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
 import { ProposalShowComponent } from './proposal/proposal-show.component';
+import { UserService } from './user/user.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ProposalShowComponent } from './proposal/proposal-show.component';
     AppRoutingModule,
     NgbModule.forRoot()
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ UserService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
