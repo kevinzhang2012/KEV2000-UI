@@ -11,17 +11,35 @@ export class AppComponent implements OnInit {
   title = 'app works!';
   navbarAnimate = "invisible";
 
-  constructor (
-    private userService: UserService
-  ){}
-
+  constructor (private userService: UserService){}
+  
   ngOnInit():void {
     setTimeout(() => this.navbarAnimate="animated fadeInDown",1000);
   }
   signUp(email:String, password:String, confirmPassword:String): void {
+    // console.log(email);
+    // console.log(password);
+    // console.log(confirmPassword);
+    
+    this.userService.create(email, password, confirmPassword)
+    .then( 
+      () => {});
+
+    // this.userService.create(email, password, confirmPassword)
+    //         .subscribe(
+    //             data => {
+    //                 console.log("Signup successed!")
+    //             },
+    //             error => {
+    //                 console.log("Signup failed!")
+    //             });
+    
+  }
+  login(email:String, password:String):void {
     console.log(email);
     console.log(password);
-    console.log(confirmPassword);
-    //this.userService.signUp
+        this.userService.login(email, password)
+    .then( 
+      () => {});
   }
 }

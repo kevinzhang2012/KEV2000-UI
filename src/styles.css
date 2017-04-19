@@ -26,15 +26,22 @@ body{
     position: absolute;
     background-repeat: no-repeat;
 }
+.hp-textblock {
+    position: absolute;
+    width: 100%;
+    height:30%;
+    top:20%;
+    background-color: rgba(124,124,124,0.5);
+}
 
 #hp-welcome {
     position: absolute;
-    top: 20%;
+    top: 45px;
 }
 
 #hp-intro {
     position: absolute;
-    top: 30%;
+    bottom: 45px;
 }
 
 #hp-intro hr {
@@ -46,7 +53,7 @@ body{
 }
 
 .hp-h1 {
-    font-size: 8vw;
+    font-size: 80px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
     color: white;
@@ -55,6 +62,12 @@ body{
     color: white;
 }
 
+#hp-arrowdown{
+    bottom:30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
 #section-1 {
     width:100%;
     height:100%
@@ -75,7 +88,6 @@ body{
 .centered {
     position: absolute;
     left: 50%;
-    margin-right: -50%;
     transform: translate(-50%);
 }
 
