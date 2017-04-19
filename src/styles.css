@@ -39,27 +39,10 @@ body{
     top: 45px;
 }
 
-#hp-intro {
-    position: absolute;
-    bottom: 45px;
-}
 
-#hp-intro hr {
-    border-color: #d6d6d6;
-}
 #hp-downarrow {
     color: white;
     bottom:30px;
-}
-
-.hp-h1 {
-    font-size: 80px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-weight: bold;
-    color: white;
-}
-#hp-jobtitle {
-    color: white;
 }
 
 #hp-arrowdown{
@@ -68,17 +51,76 @@ body{
     left: 50%;
     transform: translate(-50%,0);
 }
+
+#btn-github {
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 #section-1 {
     width:100%;
     height:100%
 }
 #section-2 {
-    background-color: #252830;
     width:100%;
     height:100%
 }
+#section-3 {
+    width: 100%;
+    height:100%;
+    background-color: #b2b2b2;
+}
+
+#section-2-container {
+    height:100%;
+}
+
+#hp-carsousel {
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width: 550px;
+}
+#hp-greeting{
+    position: relative;
+    text-align: center;
+    color: white;
+    top:40px;
+}
+#hp-intro {
+    min-width: 223px;
+    color: white;
+    border-bottom: 1px solid white;
+    bottom:60px;
+    padding-bottom:5px;
+}
+#hp-jobtitle {
+    position: relative;
+    text-align: center;
+    color: white;
+    bottom:-120px;
+}
 
 
+/*section2*/
+#hp-project {
+    top:30px;
+    color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    padding:5px;
+}
+#section-2-1 {
+    height: 500px;
+    background-color: cadetblue;
+}
+#section-2-2 {
+    height: 500px;
+    background-color: azure;
+}
 
 
 
@@ -91,68 +133,27 @@ body{
     transform: translate(-50%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-    z-index: -1;
-  transform: translateZ(-1px)scale(2);
+h1,h2 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 900;
 }
 
 
 
 
-#section-2-container{
-    height:100%;
-}
 
 
 
-.carousel{
-    height: 100%;
-}
-.carousel-inner{
 
-    height:100%;
-}
-.carousel-item {
-    top:20%;
-    transform: translateY(-50%);
-    transform: translateZ(-1px)scale(1.5);
-}
-.carousel-indicators {
-    bottom:40px;
-}
+
+
+
+
+
+
+
+
+
 
 
 

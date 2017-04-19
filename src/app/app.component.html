@@ -1,3 +1,4 @@
+<!--Navbar-->
 <nav class="navbar navbar-toggleable-sm navbar-light bg-faded fixed-top" [ngClass]="navbarAnimate">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,9 +26,9 @@
           <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
         </li>
     </ul>
-    <a class="btn btn-outline-primary btn my-2 my-sm-0" target="_blank" href="https://github.com/kevinzhang2012/KEV2000-UI">  <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+    
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">
+<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#signup-modal">
   Sign Up
 </button>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
@@ -37,6 +38,7 @@
   </div>
    </div>
 </nav>
+
 <!-- Modal -->
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
