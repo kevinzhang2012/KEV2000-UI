@@ -17,6 +17,7 @@ export class HomepageComponent implements OnInit{
                 i=0;
             } else {i++;}
         }
+        function timeoutgreeting(){}
         setInterval(() => {this.greeting=this.greetings[i];TimeoutGreeting()}, 3000);
     }
 }

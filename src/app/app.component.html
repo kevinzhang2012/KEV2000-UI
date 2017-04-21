@@ -4,102 +4,103 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="container">
-    <a class="navbar-brand" href="/">KEVINNZ</a>
-    <div class="collapse navbar-collapse" id="navbar-content">
-      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/documents" routerLinkActive="active"><i class="fa fa-file" aria-hidden="true"></i> Docs</a>
-        </li>
-        <li class="nav-item dropdown" routerLinkActive="active"> 
-         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-            <i class="fa fa-file-text" aria-hidden="true"></i> Proposal
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active"><i class="fa fa-plus-circle" aria-hidden="true"></i> New Proposal</a>
-            <a class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}"><i class="fa fa-eye" aria-hidden="true"></i> Show Proposal</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
-        </li>
-    </ul>
-    
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#signup-modal">
+        <a class="navbar-brand" href="/">KEVINNZ</a>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="nav nav-tabs navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a pageScroll class="nav-link" href="#section-1"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a pageScroll class="nav-link" href="#section-2"><i class="fa fa-file-text" aria-hidden="true"></i> PROJECTS</a>
+                    <!--<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-file-text" aria-hidden="true"></i> Proposal
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active"><i class="fa fa-plus-circle" aria-hidden="true"></i> New Proposal</a>
+                        <a class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}"><i class="fa fa-eye" aria-hidden="true"></i> Show Proposal</a>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a pageScroll class="nav-link" href="#section-3"><i class="fa fa-info-circle" aria-hidden="true"></i> ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" routerLink="/documents" routerLinkActive="active"><i class="fa fa-file" aria-hidden="true"></i> CARDS</a>
+                </li>
+            </ul>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#signup-modal">
   Sign Up
 </button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
   Login
 </button>
 
-  </div>
-   </div>
+        </div>
+    </div>
 </nav>
 
 <!-- Modal -->
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input #signupEmail type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="modal-body">
 
-            <label for="exampleInputPassword1">Password</label>
-            <input #signupPassword type="password" class="form-control"  placeholder="Password">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input #signupEmail type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
 
-            <label for="exampleInputPassword1">Confirm Password</label>
-            <input #signupConfirmPassword type="password" class="form-control"  placeholder="Password">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="signup-submit" (click)="signUp(signupEmail.value,signupPassword.value,signupConfirmPassword.value)">Sign Up</button>
-      </div>
+                        <label for="exampleInputPassword1">Password</label>
+                        <input #signupPassword type="password" class="form-control" placeholder="Password">
+
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input #signupConfirmPassword type="password" class="form-control" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="signup-submit" (click)="signUp(signupEmail.value,signupPassword.value,signupConfirmPassword.value)">Sign Up</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input #loginEmail type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="modal-body">
 
-            <label for="exampleInputPassword1">Password</label>
-            <input #loginPassword type="password" class="form-control"  placeholder="Password">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="login-submit" (click)="login(loginEmail.value, loginPassword.value)">Login</button>
-      </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input #loginEmail type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+
+                        <label for="exampleInputPassword1">Password</label>
+                        <input #loginPassword type="password" class="form-control" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="login-submit" (click)="login(loginEmail.value, loginPassword.value)">Login</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 

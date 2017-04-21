@@ -1,8 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {margin:0;padding:0;height:100%;}
-body{
+
+html,
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
     background-color: #252830;
 }
+
+
+/*Common used*/
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h1,
+h2 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 900;
+}
+
+
+/*navbar*/
+
+.navbar-collapse .btn-outline-primary {
+    margin-right: 3px;
+}
+
 
 /*.padding-top {
     padding-top: 80px;
@@ -19,19 +55,20 @@ body{
 .hp-background {
     width: 100%;
     height: 100%;
-    z-index: -999;
-    background-image:url("/assets/landscape.jpg");
+    z-index: -5;
+    background-image: url("/assets/landscape.jpg");
     /*background-image:url("/kevinnz/assets/wallpaper_3.jpg");*/
-    background-size:cover;
+    background-size: cover;
     position: absolute;
     background-repeat: no-repeat;
 }
+
 .hp-textblock {
     position: absolute;
     width: 100%;
-    height:30%;
-    top:20%;
-    background-color: rgba(124,124,124,0.5);
+    height: 30%;
+    top: 20%;
+    background-color: rgba(124, 124, 124, 0.5);
 }
 
 #hp-welcome {
@@ -39,17 +76,16 @@ body{
     top: 45px;
 }
 
-
 #hp-downarrow {
     color: white;
-    bottom:30px;
+    bottom: 30px;
 }
 
-#hp-arrowdown{
-    bottom:30px;
+#hp-arrowdown {
+    bottom: 30px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
 #btn-github {
@@ -60,100 +96,105 @@ body{
 }
 
 #section-1 {
-    width:100%;
-    height:100%
+    width: 100%;
+    height: 100%
 }
+
 #section-2 {
-    width:100%;
-    height:100%
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
+
 #section-3 {
     width: 100%;
-    height:100%;
+    height: 100%;
     background-color: #b2b2b2;
+    margin-bottom: 200px;
 }
 
 #section-2-container {
-    height:100%;
+    height: 100%;
 }
 
 #hp-carsousel {
     position: relative;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     max-width: 550px;
 }
-#hp-greeting{
+
+#hp-greeting {
     position: relative;
     text-align: center;
     color: white;
-    top:40px;
+    top: 40px;
 }
+
 #hp-intro {
     min-width: 223px;
     color: white;
     border-bottom: 1px solid white;
-    bottom:60px;
-    padding-bottom:5px;
+    bottom: 60px;
+    padding-bottom: 5px;
 }
+
 #hp-jobtitle {
     position: relative;
     text-align: center;
     color: white;
-    bottom:-120px;
+    bottom: -120px;
 }
 
 
 /*section2*/
+
 #hp-project {
-    top:30px;
+    top: 30px;
     color: white;
     border: 5px solid white;
     border-radius: 15px;
-    padding:5px;
+    padding: 5px;
 }
+
 #section-2-1 {
     height: 500px;
     background-color: cadetblue;
 }
+
 #section-2-2 {
     height: 500px;
     background-color: azure;
 }
 
+.footerWrapper {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    bottom: 0px;
+    background-color: cadetblue;
+    z-index: -999;
+}
 
+.footer-content {
+    color: white;
+    padding: 1px;
+    bottom: 0px;
+}
+
+.footer-content .footer-copyright {
+    font-size: 1px;
+}
+
+.footer-icon-1 {
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+
+.footer-icon-2 {
+    padding-left: 6px;
+}
 
 
 /*=======================*/
-/*Common used*/
-.centered {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-h1,h2 {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 900;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
