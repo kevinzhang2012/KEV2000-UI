@@ -32,6 +32,10 @@ h2 {
     font-weight: 900;
 }
 
+.color-white {
+    color: white;
+}
+
 
 /*navbar*/
 
@@ -53,22 +57,14 @@ h2 {
 }
 
 .hp-background {
-    width: 100%;
+    /*width: 100%;
     height: 100%;
-    z-index: -5;
+    z-index: -5;*/
     background-image: url("/assets/landscape.jpg");
     /*background-image:url("/kevinnz/assets/wallpaper_3.jpg");*/
     background-size: cover;
-    position: absolute;
+    /*position: absolute;*/
     background-repeat: no-repeat;
-}
-
-.hp-textblock {
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    top: 20%;
-    background-color: rgba(124, 124, 124, 0.5);
 }
 
 #hp-welcome {
@@ -90,23 +86,29 @@ h2 {
 
 #btn-github {
     position: absolute;
-    bottom: 300px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%);
 }
 
 #section-1 {
+    position: absolute;
+    top: 0px;
     width: 100%;
     height: 100%
 }
 
 #section-2 {
+    position: absolute;
+    top: 100%;
     width: 100%;
     height: 100%;
     background-color: white;
 }
 
 #section-3 {
+    position: absolute;
+    top: 200%;
     width: 100%;
     height: 100%;
     background-color: #b2b2b2;
@@ -125,26 +127,28 @@ h2 {
     max-width: 550px;
 }
 
-#hp-greeting {
-    position: relative;
+.hp-textblock {
+    margin-top: 150px;
+    background-color: rgba(124, 124, 124, 0.5);
     text-align: center;
+}
+
+#hp-greeting {
     color: white;
-    top: 40px;
+    padding-top: 20px;
 }
 
 #hp-intro {
     min-width: 223px;
     color: white;
     border-bottom: 1px solid white;
-    bottom: 60px;
     padding-bottom: 5px;
+    display: inline-block;
 }
 
 #hp-jobtitle {
-    position: relative;
-    text-align: center;
     color: white;
-    bottom: -120px;
+    padding-bottom: 15px;
 }
 
 
@@ -178,6 +182,7 @@ h2 {
 }
 
 .footer-content {
+    text-align: center;
     color: white;
     padding: 1px;
     bottom: 0px;
