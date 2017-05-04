@@ -9,7 +9,7 @@ body {
 }
 
 body {
-    background-color: #252830;
+    background-color: cadetblue;
 }
 
 
@@ -109,13 +109,14 @@ button:hover {
     position: absolute;
     top: 400px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 0);
 }
 
 #section-1 {
     top: 0px;
     width: 100%;
-    height: 100%
+    height: 100%;
+    background-color: cadetblue;
 }
 
 #section-2 {
