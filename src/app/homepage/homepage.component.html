@@ -1,10 +1,11 @@
 <!--section-1-->
 <div id="section-1" class="hp-background">
-    <!--<div class="hp-background"></div>-->
-    <div class="hp-textblock animated fadeInUp">
-        <h1 id="hp-greeting">{{greeting}}</h1>
-        <h1 id="hp-intro">I'M KEVIN.Z</h1>
-        <p id="hp-jobtitle">Web Developer</p>
+    <div class="padding-top-200px">
+        <div class="hp-textblock animated fadeInUp">
+            <h1 id="hp-greeting">{{greeting}}</h1>
+            <h1 id="hp-intro">I'M KEVIN.Z</h1>
+            <p id="hp-jobtitle">Web Developer</p>
+        </div>
     </div>
 
     <a id="btn-github" class="btn btn-primary btn my-2 my-sm-0" target="_blank" href="https://github.com/kevinzhang2012/KEV2000-UI" data-toggle="tooltip" title="Some tooltip text!">
@@ -18,41 +19,53 @@
 </div>
 
 <!--section-2-->
-<div id="section-2">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col" id="section-2-1">
-                <div class="container" id="section-2-container">
-                    <h3 class="centered" id="hp-project">MY PROJECTS</h3>
+<div class="projects padding-80px" id="section-2">
+    <div class="container">
+        <h1 class="display-4 center-block color-white">Projects</h1>
+        <hr>
 
-                    <div id="hp-carsousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#hp-carsousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#hp-carsousel" data-slide-to="1"></li>
-                            <li data-target="#hp-carsousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active embed-responsive embed-responsive-16by9">
-                                <img class="img-thumbnail d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item embed-responsive embed-responsive-16by9">
-                                <img class="img-thumbnail d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/2.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item embed-responsive embed-responsive-16by9">
-                                <img class="img-thumbnail d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/3.jpg" alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#hp-carsousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#hp-carsousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
+
+
+
+
+        <div id="hp-carsousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#hp-carsousel" data-slide-to="0" class="active"></li>
+                <li data-target="#hp-carsousel" data-slide-to="1"></li>
+                <li data-target="#hp-carsousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active embed-responsive embed-responsive-16by9">
+                    <img class="d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>KEVINNZ</h3>
+                        <p>A personal website used to promote myself. Built with Angular 2 + BootStrap 4 + .NET Web API</p>
+                    </div>
+                </div>
+                <div class="carousel-item embed-responsive embed-responsive-16by9">
+                    <img class=" d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Workbook Online</h3>
+                        <p>Workbook Online was a web application aimed to provide online collaborative diagramming and presentation features. The project itself has adopted Angular 2 + Ruby On Rails stacks.</p>
+                    </div>
+                </div>
+                <div class="carousel-item embed-responsive embed-responsive-16by9">
+                    <img class=" d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>MEET.U</h3>
+                        <p>A practice of building web social network with my developer friends. Mainly implemented with AngularJS and ASP.NET in a responsive design. Took part in front-end development includes designing and functioning for the index page.</p>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#hp-carsousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#hp-carsousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
@@ -75,7 +88,7 @@
         </div>
     </div>
 </div>
-
+<div class="footer_transparent"></div>
 <div class="footerWrapper">
 
     <div class="footer-content">

@@ -45,6 +45,10 @@ button:hover {
     color: cadetblue;
 }
 
+.padding-top-200px {
+    padding-top: 200px;
+}
+
 
 /*navbar*/
 
@@ -109,27 +113,22 @@ button:hover {
 }
 
 #section-1 {
-    position: absolute;
     top: 0px;
     width: 100%;
     height: 100%
 }
 
 #section-2 {
-    position: absolute;
     top: 100%;
     width: 100%;
-    height: 100%;
-    background-color: #b2b2b2;
+    background-color: cadetblue;
 }
 
 #section-3 {
-    position: absolute;
     top: 200%;
     width: 100%;
     /*height: 100%;*/
     background-color: white;
-    margin-bottom: 200px;
 }
 
 #section-2-container {
@@ -137,15 +136,14 @@ button:hover {
 }
 
 #hp-carsousel {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     max-width: 550px;
+    left: 50%;
+    transform: translate(-50%, -0);
+    border: 10px solid white;
+    box-shadow: 0px 1px 10px #3a3a3a;
 }
 
 .hp-textblock {
-    margin-top: 150px;
     background-color: rgba(124, 124, 124, 0.5);
     text-align: center;
 }
@@ -171,22 +169,10 @@ button:hover {
 
 /*section2*/
 
-#hp-project {
-    top: 30px;
-    color: white;
-    border: 5px solid white;
-    border-radius: 15px;
-    padding: 5px;
-}
-
-#section-2-1 {
-    height: 500px;
-    background-color: cadetblue;
-}
-
-#section-2-2 {
-    height: 500px;
-    background-color: azure;
+.footer_transparent {
+    position: absolute;
+    height: 200px;
+    width: 1px;
 }
 
 .footerWrapper {
