@@ -1,6 +1,6 @@
 <span [hidden]="hideHomepage">
 <!--section-1-->
-<div id="section-1" class="hp-background animated fadeIn">
+<div id="section-1" class="hp-background shadow-black animated fadeIn">
     <div class="padding-top-200px">
         <div [hidden]="hideSection1" class="hp-textblock animated fadeInUp">
             <h1 id="hp-greeting">{{greeting}}</h1>
@@ -68,7 +68,7 @@
 </div>
 
 <!--section-3-->
-<div id="section-3" class="about-me padding-80px">
+<div id="section-3" class="padding-80px shadow-black">
     <div class="container">
         <h1 class="display-4 center-block color-cadetblue">About Me</h1>
         <hr>
@@ -87,16 +87,26 @@
 </div>
 <div class="footer_transparent"></div>
 <div class="footerWrapper" [hidden]="hideSection1">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-9 contact">
+                    <a href="mailto:kevinzhang2012@live.cn" class="color-white"><i class="fa fa-envelope" aria-hidden="true"></i> kevinzhang2012@live.cn</a> <br> <i class="fa fa-phone" aria-hidden="true"></i> +642102890195 <br>
 
-    <div class="footer-content">
-        Email: <a href="mailto:kevinzhang2012@live.cn">kevinzhang2012@live.cn</a> <br> Phone: +642102890195 <br>
-        <div class="footer-social-icon">
-            <i class="fa fa-linkedin-square fa-3x footer-icon-1" aria-hidden="true"></i>
+                </div>
 
-            <a class="color-white" href="https://github.com/kevinzhang2012" target="_blank"><i class="fa fa-github-square fa-3x footer-icon-2" aria-hidden="true"></i></a>
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-social-icon">
+                        <a class="color-white" href="https://www.linkedin.com/in/kevinzhang1994/" target="_blank"><i class="fa fa-linkedin-square fa-3x footer-icon-1" aria-hidden="true"></i></a>
+
+                        <a class="color-white" href="https://github.com/kevinzhang2012" target="_blank"><i class="fa fa-github-square fa-3x footer-icon-2" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="footer-copyright"> &copy;2017 Yuxiang Zhang</p>
+                </div>
+
+            </div>
+
         </div>
-        <p class="footer-copyright"> &copy;2017 Yuxiang Zhang</p>
     </div>
-
 </div>
 </span>

@@ -49,6 +49,10 @@ button:hover {
     padding-top: 200px;
 }
 
+.shadow-black {
+    box-shadow: 0px 1px 10px #3a3a3a;
+}
+
 
 /*navbar*/
 
@@ -168,7 +172,17 @@ button:hover {
 }
 
 
-/*section2*/
+/*section3*/
+
+
+/*LinkedIn badge */
+
+.LI-badge-container-vertical-light.LI-badge-container.vertical.light.large {
+    box-shadow: 0px 1px 10px #3a3a3a;
+}
+
+
+/*footer*/
 
 .footer_transparent {
     position: absolute;
@@ -183,13 +197,23 @@ button:hover {
     bottom: 0px;
     background-color: cadetblue;
     z-index: -999;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.contact {
+    padding-top: 20px;
 }
 
 .footer-content {
     text-align: center;
     color: white;
-    padding: 1px;
-    bottom: 0px;
+    padding-top: 40px;
 }
 
 .footer-content .footer-copyright {
