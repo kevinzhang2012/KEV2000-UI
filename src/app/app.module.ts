@@ -13,6 +13,7 @@ import { ProposalNewComponent } from './proposal/proposal-new.component';
 import { ProposalListComponent } from './proposal/proposal-list.component';
 import { ProposalShowComponent } from './proposal/proposal-show.component';
 import { UserService } from './user/user.service';
+import {NgsRevealModule} from 'ng-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { UserService } from './user/user.service';
     HttpModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    Ng2PageScrollModule.forRoot()
+    Ng2PageScrollModule.forRoot(),
+    NgsRevealModule.forRoot()
   ],
   providers: [ UserService ],
   bootstrap: [ AppComponent ]
