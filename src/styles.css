@@ -80,6 +80,7 @@ button:hover {
 
 .padding-20px {
     padding: 20px;
+    display: inline;
 }
 
 .navbar {

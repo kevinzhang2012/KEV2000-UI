@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomepageComponent implements OnInit{
     greeting : string = "WELCOME";
-    greetings : string [] = ["Kia ora", "欢迎","Bienvenue", "ようこそ","Добро пожаловать","환영","WELCOME"]; 
+    greetings : string [] = ["WELCOME", "欢迎","Bienvenue", "ようこそ","환영","欢迎","WELCOME"]; 
     hideHomepage : boolean = true;
-    hideSection1: boolean = true;
+    diableContents: boolean = true;
 
     ngOnInit() {
         let i = 0;
@@ -24,6 +24,6 @@ export class HomepageComponent implements OnInit{
     }
     ngAfterContentChecked(){
         this.hideHomepage = false;    
-        setTimeout(() => {this.hideSection1 = false;}, 1000);
+        setTimeout(() => {this.diableContents = false;}, 1000);
     }
 }
